@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+<class name="com.sravya.hibernate.Customer" table="customer2">
+<id name="id" column="eid">
+<generator class="increment"></generator>
+</id>
+<property name="name" column="ename"></property>
+<property name="panNo" column="epanNo"></property>
+<property name="state" column="estate"></property>
+<property name="country" column="ecountry"></property>
+<property name="phone" column="ephone"></property>
+<property name="mail" column="email"></property>
+<property name="accountNo" column="eaccountNo"></property>
+<property name="creditscore" column="ecreditscore"></property>
+</class>
+</hibernate-mapping>
